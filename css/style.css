@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 300;
+}
+
+.header {
+	background: linear-gradient(#97C38E,#5584B4);
+	color: #FFFFFF;
+	padding: 7em 5em;
+	text-align: center;
+}
+
+.header--logo {
+	margin: 0 0 3em;
+}
+
+.header--logo-image {
+	width: 40%;		
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ services */
+.services {
+	margin: 5em 0 0;
+}
+
+.services--title {
+	font-size: 2.5em;
+	margin: 0 0 0.5em;
+}
+
+.services--text  {
+	margin: 0 25% 2em;
+}
+
+.services--list {
+	margin: 0 10%;
+	padding: 0;
+	text-align: center;
+}
+
+.services--item {
+	display: inline-block;
+	list-style: none;
+	vertical-align: top;
+	width: 30%;
+}
+
+.services--item-image {
+	
+}
+
+.services--item-text {
+	font-size: 1.8em;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ contact */
+.contact {
+	padding: 3em 0;
+	text-align: center;
+}
+
+.contact--title {
+	margin: 0 0 2em;
+}
+
+.contact--list {
+	margin: 0 35%;
+	padding: 0;
+}
+
+.contact--item {
+	display: inline-block;
+	width: 45%;
+}
+
+.contact--link {
+	color: #2F3C54;
+	text-decoration: none;
+	text-align: center;
+}
+
+.contact--icon {
+	width: 80%;
+	display: block;
+	margin: 0 10% 1em;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ mobile */
+@media (max-width: 1024px) {
+	.services--item-text {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 768px) {
+	.header--logo-image {
+		width: 60%;
+	}
+
+	.services--text  {
+		margin: 0 10% 2em;
+	}
+
+	.services--list {
+		margin: 0 0;
+	}
+
+	.services--item-text {
+		font-size: 1.1em;
+	}
+
+	.contact--title {
+		font-size: 1em;
+	}
+
+	.contact--list {
+		margin: 0 25%;
+	}
+}
+
+@media (max-width: 414px) {
+	body {
+		font-size: 14px;
+	}
+
+	.header {
+		padding: 7em 3em;
+	}
+
+	.header--logo-image {
+		width: 80%;
+	}
+
+	.services--item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+		font-size: 12px;
+	}
+
+	.header {
+		padding: 7em 1em;
+	}
+
+	.services--title {
+		font-size: 2.0em;
+	}
+}
