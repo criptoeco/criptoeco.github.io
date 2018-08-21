@@ -6,23 +6,191 @@ body {
 }
 
 .header {
-	background: linear-gradient(#97C38E,#5584B4);
+	background: linear-gradient(135deg, #97C38E,#5584B4);
 	color: #FFFFFF;
-	padding: 7em 5em;
+	padding: 6em 5em;
 	text-align: center;
 }
 
 .header--logo {
-	margin: 0 0 3em;
+	margin: 0;
 }
 
 .header--logo-image {
 	width: 40%;		
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------ events */
+.events {
+	padding: 8em 5em;
+	text-align: center;
+}
+
+.events--title {
+	font-size:2.5em;
+	font-weight:700;
+	color:#333B46;
+	margin:0 0 2em;
+	line-height:1
+}
+
+.events--title:before {
+	content:"";
+	display:block;
+	width:30px;
+	height:3px;
+	background:#5B56E7;
+	margin:0 auto
+}
+
+.events--list {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+}
+
+.events--item {
+	box-sizing: border-box;
+	width: 30%;
+	display: inline-block;
+	margin: 0 -4px 0 5%;
+	vertical-align: top;
+}
+
+.events--item:first-child {
+	margin: 0;
+}
+
+.events--item-photo {
+	width: 100%;
+	margin: 0 0 1em;
+}
+
+.events--item-title {
+	font-size: 2em;
+	margin: 0 0 0.4em;
+}
+
+.events--item-date {
+	font-size: 1.8em;
+	margin: 0 0 0.7em;
+}
+
+.events--item-location {
+	font-size: 1.5em;
+	margin: 0 0 1em;
+	font-weight: bold;
+}
+
+.events--item-link {
+	display: inline-block;
+	padding: 0.8em 1em;
+	color: #FFFFFF;
+	background: #6CCD58;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	width: 60%;
+}
+
+.events--item-link-notready {
+	background: none;
+	color: #5B56E7;
+	border: 3px solid #5B56E7;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ newsletter */
+.news {
+	background: #F3F3F4;
+	margin: 0;
+	padding: 8em 5em;
+}
+
+.newsletter {
+	padding:5em 0;
+	background:#F3F3F4;
+	text-align:center
+}
+
+@media screen and (max-width: 480px) {
+	.newsletter {
+		font-size:.9em
+	}
+
+}
+
+.newsletter--title {
+	font-size:2.5em;
+	font-weight:700;
+	color:#333B46;
+	margin:0 0 .5em;
+	line-height:1
+}
+
+.newsletter--title:before {
+	content:"";
+	display:block;
+	width:30px;
+	height:3px;
+	background:#5B56E7;
+	margin:0 auto
+}
+
+.newsletter--text {
+	margin:0 10%
+}
+.newsletter--form {
+	margin:3em 10% 0
+}
+
+@media screen and (max-width: 480px) {
+	.newsletter--form {
+		margin-right:5%;
+		margin-left:5%
+	}
+}
+
+.newsletter--email {
+	display:inline-block;
+	width:70%;
+	margin:0 0 0 -4px;
+	border:none;
+	font-size:1.5em;
+	padding:1em;
+	font-weight:300;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.newsletter--email {
+		width:100%
+	}
+}
+
+.newsletter--button {
+	display:inline-block;
+	width:30%;
+	margin: 1em 0 0 -4px;
+	border:none;
+	color: #FFFFFF;
+	background: #6CCD58;
+	font-weight:700;
+	font-size:1.5em;
+	padding:1em
+}
+
+@media screen and (max-width: 480px) {
+	.newsletter--button {
+		width:100%
+	}
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------ services */
 .services {
-	margin: 5em 0 0;
+	background: linear-gradient(135deg, #97C38E,#5584B4);
+	color: #FFFFFF;
+	padding: 8em 5em;
+	text-align: center;
 }
 
 .services--title {
@@ -57,35 +225,63 @@ body {
 
 /* ------------------------------------------------------------------------------------------------------------------------ contact */
 .contact {
-	padding: 3em 0;
+	padding: 8em 20%;
 	text-align: center;
+}
+
+/* -------------------------------------------------------- contact-div */
+.contact--div {
+	width: 45%;
+	box-sizing: border-box;
+	margin: 0 2%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .contact--title {
 	margin: 0 0 2em;
+	text-align: left;
 }
 
-.contact--list {
-	margin: 0 35%;
-	padding: 0;
-}
-
-.contact--item {
-	display: inline-block;
-	width: 45%;
-}
-
-.contact--link {
-	color: #2F3C54;
-	text-decoration: none;
-	text-align: center;
-}
-
-.contact--icon {
+.contact--title-image {
 	width: 80%;
-	display: block;
-	margin: 0 10% 1em;
 }
+
+/* -------------------------------------------------------- contact-form */
+.contact--form {
+	width: 46%;
+	box-sizing: border-box;
+	margin: 0 2%;
+	display: inline-block;
+	text-align: left;
+}
+
+.contact--form-title {
+	color: #5584B4;
+	margin: 0 0 1em;
+}
+
+.contact--form-input {
+	border: 1px solid #5584B4;
+	width: 100%;
+	padding: 1em 0.5em;
+	box-sizing: border-box;
+	margin: 0 0 1em;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.contact--form-submit {
+	background: #5584B4;
+	color: #FFFFFF;
+	float: right;
+	width: 40%;
+	font-size: 1.2rem;
+	padding: 0.8em 0.4em;
+	border: none;
+	border-radius: 5px;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------ mobile */
 @media (max-width: 1024px) {
